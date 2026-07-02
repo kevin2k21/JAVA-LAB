@@ -1,5 +1,21 @@
 import java.util.*;
 
+public class MyClass
+{
+	public static void main(String args[])
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		int n = s.nextInt();
+		if(n%2 == 0){
+			System.out.println("The given number is even");
+		}
+		else{
+			System.out.println("The given number is odd");
+		}
+	}
+}
+
 /*public class MyClass
 {
 	public static void main(String args[])
@@ -36,24 +52,24 @@ import java.util.*;
 	}
 }*/
 
-public class MyClass
-{
-	public static void main(String args[])
-	{
-		Scanner s = new Scanner(System.in);
-		System.out.println("Enter a number: ");
-		int n = s.nextInt();
-		int n1 = n;
-		int sum = 0;
-		while(n1 != 0)
-		{
-			int d = n1 % 10;
-			sum = sum + d*d*d;
-			n1 = n1/10;
-		}
-		if(sum == n)
-			System.out.println("The given number is an amstrong number");
-		else
-			System.out.println("The given number is not an amstrong number");
-	}
-}
+// public class MyClass
+// {
+// 	public static void main(String args[])
+// 	{
+// 		Scanner s = new Scanner(System.in);
+// 		System.out.println("Enter a number: ");
+// 		int n = s.nextInt();
+// 		int n1 = n;
+// 		int sum = 0;
+// 		while(n1 != 0)
+// 		{
+// 			int d = n1 % 10;
+// 			sum = sum + d*d*d;
+// 			n1 = n1/10;
+// 		}
+// 		if(sum == n)
+// 			System.out.println("The given number is an amstrong number");
+// 		else
+// 			System.out.println("The given number is not an amstrong number");
+// 	}
+// }
